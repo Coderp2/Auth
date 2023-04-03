@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/signIn.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+<body>
+<div class="center">
+ <h1>Sign In</h1>
+
+ <form action="/users/create-session" method="POST">
+    <div class="infields"> 
+        <input type="email" name="email" placeholder="Email"  required>
+        <input type="password" name="password" placeholder="Password"  required>
+        <input type="submit" value="Sign In">
+    </div>
+    <div id="signup">
+        <a href="/users/forget">Forget Password</a> 
+         <br><br>New User? <a href="/users/sign-up">SignUp</a>    
+         <a href="/users/auth/google"><i class="bi bi-google"></i></a>     
+    </div>
+    
+ </form>
+</div>
+</body>

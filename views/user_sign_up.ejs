@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/signup.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<body>
+<div class="center">
+  <h1>Sign Up</h1>
+
+  <form action="/users/create" method="POST">
+    <div class="infields"> 
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <input type="submit" value="Sign Up">
+    </div>
+    <a href="/users/auth/google"><i class="bi bi-google"></i></a>
+  </form>
+</div>
+</body>
