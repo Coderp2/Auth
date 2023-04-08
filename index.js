@@ -45,7 +45,7 @@ app.use(session({
     },
     store: new MongoStore(
         {
-           uri: 'mongodb://127.0.0.1:27017/Auth_page',
+           uri: process.env.MONGO,
             autoRemove: 'disabled'
         
         },
