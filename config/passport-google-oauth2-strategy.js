@@ -6,9 +6,9 @@ const crypto = require('crypto');
 const User = require('../models/user');
 
 passport.use(new googleStrategy({
-    clientID:"abc",//hiding credentials
-    clientSecret :"abc1", 
-    callbackURL:"http://localhost:8000/users/auth/google/callback",
+    clientID:process.env.CLIENTID,
+    clientSecret :process.env.CLIENTSECRET, 
+    callbackURL:process.env.CALLBACKURL,
 },
 function(accessToken,refreshToken,profile,done){
     User.findOne({email:profile.emails[0].value}).exec(function(err,user){

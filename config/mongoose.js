@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://127.0.0.1:27017/Auth_page', { useNewUrlParser: true,  useUnifiedTopology: true, family: 4, });
+mongoose.connect(process.env.MONGO, { useNewUrlParser: true,  useUnifiedTopology: true, family: 4, });
 
 const db = mongoose.connection;
 
